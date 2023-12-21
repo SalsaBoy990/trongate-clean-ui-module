@@ -41,7 +41,6 @@
     <!-- Custom scripts -->
     <script src="ui-clean_module/library/clean-dropzone/dist/js/clean-dropzone.js"></script>
     <script src="ui-clean_module/library/tom-select/tom-select-2.2.2.js"></script>
-
 </head>
 <body @scroll="setScrollToTop()">
 <div class="wrapper">
@@ -96,11 +95,7 @@
     </header>
 
 
-    <div class="main-container container relative">
-        <main class="content">
-            <?= Template::display($data) ?>
-        </main>
-    </div>
+    <?= Template::display($data) ?>
 
 
     <button class="light-gray scroll-to-top-button padding-0-5 round"
@@ -132,3 +127,4 @@
 
 </body>
 </html>
+

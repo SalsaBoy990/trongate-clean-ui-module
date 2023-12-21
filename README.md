@@ -2,30 +2,36 @@
 
 Author: András Gulácsi
 
-_Almost production-ready._
+_Soon to be released with a version number._
 
 
 ## Install the Clean.UI Trongate module
 
 1. Copy the `ui` folder into your `modules` folder of your Trongate project.
 
-2. Copy the `clean.php` into your `templates\views` folder of your Trongate project.
+2. Copy the `clean.php`, and the `clean-demo.php`  into your `templates\views` folder of your Trongate project.
 
-3. Add this method to your `templates/controllers/Templates.php` file:
+3. Add these two methods to your `templates/controllers/Templates.php` file (`clean_demo` is used by the clean.ui demo page):
 
 ```php
     function clean($data) {
         load('clean', $data);
     }
+
+    function clean_demo($data) {
+        load('clean-demo', $data);
+    }
 ```
 
-4. The Clean CSS demo with useful components will be accessible at: `http://localhost/{your_project_folder_name}/ui`
+4. The Clean.UI demo with useful components will be accessible at: `http://localhost/{your_project_folder_name}/ui`
 
 
 ## After install / Get Started
 
 Go to `modules\ui\clean\` folder.
 You can either use gulp or make to generate your css and js bundles.
+
+_Tip: For shared hosting, do not copy the `node_modules` folder and the build scripts through ftp._
 
 ### Gulp setup (all OS)
 

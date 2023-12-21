@@ -2,7 +2,7 @@
 
 class Ui extends Trongate
 {
-	private string $template_to_use = 'clean';
+	private string $template_to_use = 'clean_demo';
 
     function index()
     {
