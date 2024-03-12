@@ -2,7 +2,7 @@
 
 Modified by `András Gulácsi`.
 
-Used in my clean.ui library.
+Used in my clean.css library.
 
 
 bs-dropzone.js

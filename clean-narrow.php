@@ -41,7 +41,6 @@
     <!-- Custom scripts -->
     <script src="ui-clean_module/library/clean-dropzone/dist/js/clean-dropzone.js"></script>
     <script src="ui-clean_module/library/tom-select/tom-select-2.2.2.js"></script>
-
 </head>
 <body @scroll="setScrollToTop()">
 <div class="wrapper">
@@ -52,7 +51,7 @@
             </div>
             <div class="logo">
                 <a href="<?= BASE_URL ?>">
-                    <img src="ui_module/images/logo.png" alt="<?= WEBSITE_NAME ?>"/>
+                    <img src="ui_module/images/logo.png" alt="<?= WEBSITE_NAME ?>" />
                     <span>Clean Theme</span>
                 </a>
             </div>
@@ -73,7 +72,7 @@
         <div id="header-lg">
             <div class="logo">
                 <a href="<?= BASE_URL ?>">
-                    <img src="ui_module/images/logo.png" alt="<?= WEBSITE_NAME ?>"/>
+                    <img src="ui_module/images/logo.png" alt="<?= WEBSITE_NAME ?>" />
                     <span>Clean Theme</span>
                 </a>
             </div>
@@ -100,7 +99,7 @@
 
 
     <div class="main-container container relative">
-        <main class="content">
+        <main class="content content-960 margin-left-right-auto">
             <?= Template::display($data) ?>
         </main>
     </div>
@@ -120,7 +119,7 @@
 <footer class="footer">
     <div class="container">
         <!-- it's okay to remove the links and content here - everything is cool (DC) -->
-        <div class="fs-14">&copy; Copyright <?= date('Y') . ' ' . OUR_NAME ?></div>
+        <div class="fs-14">&copy; Copyright <?= date('Y').' '.OUR_NAME ?></div>
         <div class="fs-14"><?= anchor('https://trongate.io', 'Powered by Trongate') ?></div>
     </div>
 </footer>
@@ -131,7 +130,7 @@
 <script src="<?= BASE_URL ?>js/app.js"></script>
 <script src="ui-clean_module/js/clean.js"></script>
 <script src="ui-clean_module/js/prism.js"></script>
-<script src="ui-clean_module/js/custom.js"></script>
 
 </body>
 </html>
+

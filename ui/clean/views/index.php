@@ -85,7 +85,7 @@
         <div class="accordion" x-data="accordionData">
 
             <button @click="toggleAccordion('accordionOne')" aria-controls="accordionOne" type="button"
-                    class="fs-16 block left-align accordion-button">
+                    class="fs-16 flex left-align accordion-button">
                 <span>Open Section 1</span><i class="fa-solid fa-plus"></i>
             </button>
             <div id="accordionOne" :aria-expanded="isAccordionContentExpanded('accordionOne')"
@@ -478,7 +478,7 @@
 &lt;p&gt;Center-aligned breadcrumb&lt;/p&gt;
 
 &lt;nav class=&quot;breadcrumb breadcrumb-center&quot;&gt;
-    &lt;ol class=&quot;breadcrumb-center&quot;&gt;
+    &lt;ol&gt;
         &lt;li&gt;
             &lt;a href=&quot;#&quot;&gt;
                 &lt;i class=&quot;fa fa-home&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
