@@ -50,7 +50,7 @@ Install the cli (globally):
 npm -g install gulp-cli
 ```
 
-Install nmp packages:
+Install npm packages:
 
 ```bash
 npm i
@@ -75,6 +75,15 @@ Watch mode (both JS and CSS):
 ```bash
 gulp watch
 ```
+
+#### How to use the CSS frameworK?
+
+Never overwrite the files in `_dev\sass\clean\elements`, `_dev\sass\clean\meta`, and `_dev\sass\clean\structure` folders.
+Instead, create a theme sass file in `_dev\sass\clean\themes` folder (make a copy of the default.sass theme).
+Custom codes / overwrites should go to: `_dev\sass\clean\themes\{your-theme}.sass`.
+
+Import your theme file in `_dev\sass\clean\clean.sass` below the line `@import normalize` at the top, and your overwrite file at the end.
+Comment out or delete the default theme imports as well.
 
 
 ### Makefile (only for Linux)
