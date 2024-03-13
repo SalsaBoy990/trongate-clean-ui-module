@@ -2,9 +2,16 @@
 
 class Ui extends Trongate
 {
-	private string $template_to_use = 'clean_demo';
+    /**
+     * @var string
+     */
+    private string $template_to_use = 'clean_demo';
 
-    function index()
+
+    /**
+     * @return void
+     */
+    function index(): void
     {
         $data['view_module'] = 'ui/clean';
         $data['view_file'] = 'index';
